@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Book Library</h1>
+
+        <!-- Search & Sorting Controls -->
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search by title or author...">
+            <select id="sortSelect">
+                <option value="">Sort By</option>
+                <option value="title">Title (A-Z)</option>
+                <option value="date">Published Date (Newest First)</option>
+            </select>
+            <button id="toggleView">List View</button>
+        </div>
+
+        <!-- Book Display Section -->
+        <div id="book-list" class=""></div>
+
+        <!-- Load More Button -->
+        <button id="loadMore">Load More</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
