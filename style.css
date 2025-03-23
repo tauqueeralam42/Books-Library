@@ -230,3 +230,105 @@ input, select, button {
 #loadMore:active {
     transform: scale(0.95);
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .book-card {
+        width: 180px;
+    }
+
+    .list-view .book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .list-view .book-card img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #toggleView {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .book-card {
+        width: 160px;
+    }
+
+    .list-view .book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .list-view .book-card img {
+        width: 70px;
+    }
+
+    .details-panel {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .book-card {
+        width: 100%;
+    }
+
+    .list-view .book-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-view .book-card img {
+        width: 60px;
+    }
+
+    #toggleView {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    #loadMore {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .details-panel {
+        width: 90%;
+        padding: 10px;
+    }
+}
